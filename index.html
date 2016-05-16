@@ -1,0 +1,76 @@
+---
+title: だるまや京染本店
+description: だるまやは全員が洗い張り職人の呉服屋です。<br>きものの悩みをお持ちの方の駆け込み寺を目指しています！
+main_visual: '/images/t/top-jumbotron-DSC09861-{width}{pixel_ratio}.jpg'
+layout: home
+questions:
+    - title: 郵送での依頼方法を知りたい
+      link: /information/requestmethod.html
+    - title: 問い合わせしたい
+      link: /information/contact.html
+news:
+    - date: 4/7
+      title: 4月7日から4月30日までお客様感謝祭です！
+      link: /event/tenjikai.html
+---
+<section>
+    <div class="row">
+        <div class="col-sm-4">
+            <h4>よくある質問</h4>
+            <div class="list-group">
+                {% for item in page.questions %}
+                <a href="{{ item.link }}" class="list-group-item">{{ item.title }}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <h4>更新情報</h4>
+            <div class="list-group">
+                {% for item in page.news %}
+                <a href="{{ item.link }}" class="list-group-item">
+                    <span class="badge">{{ item.date }}</span>
+                    {{ item.title }}
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <h4>ブログ「だるまや6代目奮闘記」</h4>
+            <div id="blogFeed" class="list-group">
+            </div>
+            <script>
+                function blogFeed(json) {
+                    for (var i in json.feed.entry) {
+                        var entryItem = json.feed.entry[i];
+                        var title = entryItem.title.$t;
+                        var dateString = entryItem.published.$t.replace(/^\d{4}\-(\d{2})\-(\d{2}).*$/, '$1/$2');
+                        for (var j in entryItem.link) {
+                            var linkItem = entryItem.link[j];
+                            if (linkItem.rel === 'alternate' && linkItem.type === 'text/html') {
+                                var url = linkItem.href;
+                            }
+                        }
+                        var $date = $('<span>')
+                                .addClass('badge')
+                                .text(dateString);
+                        var $a = $('<a>')
+                                .addClass('list-group-item')
+                                .attr('href', url)
+                                .text(title)
+                                .prepend($date)
+                                .appendTo('#blogFeed');
+                    }
+                }
+                (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.defer = 'defer';
+                    js.async = 'async';
+                    js.src = "//blog.darumaya-gofuku.jp/feeds/posts/summary?alt=json-in-script&callback=blogFeed&max-results=5";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'getBlogFeed'));
+            </script>
+        </div>
+    </div>
+</section>

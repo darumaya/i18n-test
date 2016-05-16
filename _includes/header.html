@@ -1,0 +1,43 @@
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">だるまや</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav nav-noren">
+                {% if page.category == 'だるまやのご紹介' %}
+                <li class="active"><a href="/information/">だるまやのご紹介</a></li>
+                {% else %}
+                <li><a href="/information/">だるまやのご紹介</a></li>
+                {% endif %}
+                {% if page.category == 'きもののお手入れ' %}
+                <li class="active"><a href="/maintenance/">きもののお手入れ</a></li>
+                {% else %}
+                <li><a href="/maintenance/">きもののお手入れ</a></li>
+                {% endif %}
+                {% if page.category == 'きものの再生事例' %}
+                <li class="active"><a href="/revival/">きものの再生事例</a></li>
+                {% else %}
+                <li><a href="/revival/">きものの再生事例</a></li>
+                {% endif %}
+                {% if page.category == '着こなしのご提案' %}
+                <li class="active"><a href="/coordinate/">着こなしのご提案</a></li>
+                {% else %}
+                <li><a href="/coordinate/">着こなしのご提案</a></li>
+                {% endif %}
+                {% if page.category == '催事のご案内' %}
+                <li class="active"><a href="/event/">催事のご案内</a></li>
+                {% else %}
+                <li><a href="/event/">催事のご案内</a></li>
+                {% endif %}
+                <li><a href="http://blog.darumaya-gofuku.jp/">ブログ</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
