@@ -1,3 +1,4 @@
+{% capture lang_path %}{{ page.lang }}{% case page.lang %}{% when 'en' %}/{% endcase %}{% endcapture %}
 <nav class="navbar navbar-static-top" role="navigation">
     <div class="noren-top">
         <div class="container">
@@ -8,13 +9,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <span class="navbar-brand" href="/">
+                <a class="navbar-brand" href="/{{ lang_path }}">
                     <h1 class="logo">
                         <div class="symbol-mark hidden-xs"></div>
                         <div class="logo-type text-hide">だるまや京染本店</div>
                     </h1>
                     <p class="tag-line hidden-xs">伝統技術によるきもののお手入れと着こなしのご提案</p>
-                </span>
+                </a>
             </div>
             {% include lang-dropdown.html %}
         </div>
@@ -23,8 +24,6 @@
         <div class="container">
             <div class="collapse navbar-collapse nav-noren-wrapper" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav nav-noren">
-                    {% capture lang_path %}{{ page.lang }}{% if page.lang != "" %}/{% endif %}{% endcapture %}
-
                     {% if page.category == 'だるまやのご紹介' %}
                     <li class="active"><a href="/{{ lang_path }}information/">About [TBD]</a></li>
                     {% else %}
