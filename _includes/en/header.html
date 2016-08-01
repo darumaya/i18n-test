@@ -14,23 +14,7 @@
                         <div class="logo-type text-hide">だるまや京染本店</div>
                     </h1>
                     <p class="tag-line hidden-xs">伝統技術によるきもののお手入れと着こなしのご提案</p>
-                    {% if page.lang == 'en' %}
-                    <span>English</span>
-                    {% else %}
-                    <a href="/en{{ page.url }}">English</a>
-                    {% endif %}
-
-                    {% if page.lang == 'jp' %}
-                        <span>日本語</span>
-                    {% else %}
-                        {% if page.lang == '' %}
-                            <span>日本語</span>
-                        {% else %}
-                            <a href="{{ page.url || replace_first: "en/", "" }}">日本語</a>
-                        {% endif %}
-                    {% endif %}
-
-                </a>
+                </span>
             </div>
             {% comment %}
             <form class="navbar-form navbar-right hidden-xs" role="search">
