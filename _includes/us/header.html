@@ -1,4 +1,4 @@
-{% capture lang_path %}{{ page.lang }}{% case page.lang %}{% when 'en' %}/{% endcase %}{% endcapture %}
+{% capture country_path %}{{ page.country }}{% case page.country %}{% when 'us' %}/{% endcase %}{% endcapture %}
 <nav class="navbar navbar-static-top" role="navigation">
     <div class="noren-top">
         <div class="container">
@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/{{ lang_path }}">
+                <a class="navbar-brand" href="/{{ country_path }}">
                     <h1 class="logo">
                         <div class="symbol-mark hidden-xs"></div>
                         <div class="logo-type text-hide">Darumaya Kyozome Honten</div>
@@ -17,7 +17,7 @@
                     <p class="tag-line hidden-xs">Traditional way of maintenance… [TBD]</p>
                 </a>
             </div>
-            {% include lang-dropdown.html %}
+            {% include country-dropdown.html %}
         </div>
     </div>
     <div class="noren-bottom">
@@ -25,29 +25,29 @@
             <div class="collapse navbar-collapse nav-noren-wrapper" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav nav-noren">
                     {% if page.category == 'About [TBD]' %}
-                    <li class="active"><a href="/{{ lang_path }}information/">About [TBD]</a></li>
+                    <li class="active"><a href="/{{ country_path }}information/">About [TBD]</a></li>
                     {% else %}
-                    <li><a href="/{{ lang_path }}information/">About [TBD]</a></li>
+                    <li><a href="/{{ country_path }}information/">About [TBD]</a></li>
                     {% endif %}
                     {% if page.category == 'Maintenance [TBD]' %}
-                    <li class="active"><a href="/{{ lang_path }}maintenance/">Maintenance [TBD]</a></li>
+                    <li class="active"><a href="/{{ country_path }}maintenance/">Maintenance [TBD]</a></li>
                     {% else %}
-                    <li><a href="/{{ lang_path }}maintenance/">Maintenance [TBD]</a></li>
+                    <li><a href="/{{ country_path }}maintenance/">Maintenance [TBD]</a></li>
                     {% endif %}
                     {% if page.category == 'Renovation [TBD]' %}
-                    <li class="active"><a href="/{{ lang_path }}revival/">Renovation [TBD]</a></li>
+                    <li class="active"><a href="/{{ country_path }}revival/">Renovation [TBD]</a></li>
                     {% else %}
-                    <li><a href="/{{ lang_path }}revival/">Renovation [TBD]</a></li>
+                    <li><a href="/{{ country_path }}revival/">Renovation [TBD]</a></li>
                     {% endif %}
                     {% if page.category == 'Coordinate [TBD]' %}
-                    <li class="active"><a href="/{{ lang_path }}coordinate/">Coordinate [TBD]</a></li>
+                    <li class="active"><a href="/{{ country_path }}coordinate/">Coordinate [TBD]</a></li>
                     {% else %}
-                    <li><a href="/{{ lang_path }}coordinate/">Coordinate [TBD]</a></li>
+                    <li><a href="/{{ country_path }}coordinate/">Coordinate [TBD]</a></li>
                     {% endif %}
                     {% if page.category == 'Event [TBD]' %}
-                    <li class="active"><a href="/{{ lang_path }}event/">Event [TBD]</a></li>
+                    <li class="active"><a href="/{{ country_path }}event/">Event [TBD]</a></li>
                     {% else %}
-                    <li><a href="/{{ lang_path }}event/">Event [TBD]</a></li>
+                    <li><a href="/{{ country_path }}event/">Event [TBD]</a></li>
                     {% endif %}
                     <li><a href="http://blog.darumaya-gofuku.jp/">Blog</a></li>
                 </ul>

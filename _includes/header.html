@@ -1,6 +1,6 @@
-{% case page.lang %}
-    {% when 'en' %}
-        {% include en/header.html %}
+{% case page.country %}
+    {% when 'us' %}
+        {% include us/header.html %}
     {% else %}
         {% include jp/header.html %}
 {% endcase %}

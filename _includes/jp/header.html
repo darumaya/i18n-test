@@ -1,4 +1,4 @@
-{% capture lang_path %}{{ page.lang }}{% case page.lang %}{% when 'en' %}/{% endcase %}{% endcapture %}
+{% capture country_path %}{{ page.country }}{% case page.country %}{% when 'us' %}/{% endcase %}{% endcapture %}
 <nav class="navbar navbar-static-top" role="navigation">
     <div class="noren-top">
         <div class="container">
@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/{{ lang_path }}">
+                <a class="navbar-brand" href="/{{ country_path }}">
                     <h1 class="logo">
                         <div class="symbol-mark hidden-xs"></div>
                         <div class="logo-type text-hide">だるまや京染本店</div>
@@ -17,7 +17,7 @@
                     <p class="tag-line hidden-xs">伝統技術によるきもののお手入れと着こなしのご提案</p>
                 </a>
             </div>
-            {% include lang-dropdown.html %}
+            {% include country-dropdown.html %}
         </div>
     </div>
     <div class="noren-bottom">
@@ -25,29 +25,29 @@
             <div class="collapse navbar-collapse nav-noren-wrapper" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav nav-noren">
                     {% if page.category == 'だるまやのご紹介' %}
-                    <li class="active"><a href="/{{ lang_path }}information/">だるまやのご紹介</a></li>
+                    <li class="active"><a href="/{{ country_path }}information/">だるまやのご紹介</a></li>
                     {% else %}
-                    <li><a href="/{{ lang_path }}information/">だるまやのご紹介</a></li>
+                    <li><a href="/{{ country_path }}information/">だるまやのご紹介</a></li>
                     {% endif %}
                     {% if page.category == 'きもののお手入れ' %}
-                    <li class="active"><a href="/{{ lang_path }}maintenance/">きもののお手入れ</a></li>
+                    <li class="active"><a href="/{{ country_path }}maintenance/">きもののお手入れ</a></li>
                     {% else %}
-                    <li><a href="/{{ lang_path }}maintenance/">きもののお手入れ</a></li>
+                    <li><a href="/{{ country_path }}maintenance/">きもののお手入れ</a></li>
                     {% endif %}
                     {% if page.category == 'きものの再生事例' %}
-                    <li class="active"><a href="/{{ lang_path }}revival/">きものの再生事例</a></li>
+                    <li class="active"><a href="/{{ country_path }}revival/">きものの再生事例</a></li>
                     {% else %}
-                    <li><a href="/{{ lang_path }}revival/">きものの再生事例</a></li>
+                    <li><a href="/{{ country_path }}revival/">きものの再生事例</a></li>
                     {% endif %}
                     {% if page.category == '着こなしのご提案' %}
-                    <li class="active"><a href="/{{ lang_path }}coordinate/">着こなしのご提案</a></li>
+                    <li class="active"><a href="/{{ country_path }}coordinate/">着こなしのご提案</a></li>
                     {% else %}
-                    <li><a href="/{{ lang_path }}coordinate/">着こなしのご提案</a></li>
+                    <li><a href="/{{ country_path }}coordinate/">着こなしのご提案</a></li>
                     {% endif %}
                     {% if page.category == '催事のご案内' %}
-                    <li class="active"><a href="/{{ lang_path }}event/">催事のご案内</a></li>
+                    <li class="active"><a href="/{{ country_path }}event/">催事のご案内</a></li>
                     {% else %}
-                    <li><a href="/{{ lang_path }}event/">催事のご案内</a></li>
+                    <li><a href="/{{ country_path }}event/">催事のご案内</a></li>
                     {% endif %}
                     <li><a href="http://blog.darumaya-gofuku.jp/">ブログ</a></li>
                 </ul>
