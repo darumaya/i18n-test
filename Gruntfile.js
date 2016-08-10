@@ -124,7 +124,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/images/',
-                    src: ['**/*.jpg', '!**/*-jumbotron-*.{jpg,JPG}'],
+                    src: ['**/*.jpg', '!**/*-jumbotron-*.jpg'],
                     dest: 'images/'
                 }]
             },
@@ -159,7 +159,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'src/images/',
-                    src: ['**/*.JPG', '!**/*-jumbotron-*.{jpg,JPG}'],
+                    src: ['**/*.JPG', '!**/*-jumbotron-*.JPG'],
                     dest: 'images/'
                 }]
             },
