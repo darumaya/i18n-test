@@ -87,11 +87,40 @@
   .btn-noren {
     .button-variant(@white; @ebiiro; transparent);
     margin-top: 15px;
-    margin-bottom: 15px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    .open > .dropdown-toggle& {
+      background-color: darken(@ebiiro, 5%);
+      border-color: transparent;
+    }
   }
 
   .dropdown-noren {
-    background-color: @ebiiro-lighter;
+    background-color: darken(@ebiiro, 5%);
+
+    > li > a {
+      color: @white;
+    }
+  }
+
+  .dropdown-noren > li > a {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      background-color: @ebiiro-light;
+    }
+  }
+
+  .dropdown-menu > .disabled > a {
+    &,
+    &:hover,
+    &:focus {
+      color: @gray-lighter;
+      background-color: transparent;
+    }
   }
 
   // just copy

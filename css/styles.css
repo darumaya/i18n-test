@@ -408,7 +408,6 @@ fieldset[disabled] .btn-aqua.active
 .noren-top .btn-noren
 {
     margin-top: 15px;
-    margin-bottom: 15px;
 
     color: #fff;
     border-color: transparent;
@@ -454,9 +453,36 @@ fieldset[disabled] .noren-top .btn-noren.active
     color: #640125;
     background-color: #fff;
 }
+.noren-top .btn-noren:hover,
+.noren-top .btn-noren:focus,
+.noren-top .btn-noren:active,
+.noren-top .btn-noren.active,
+.open > .dropdown-toggle.noren-top .btn-noren
+{
+    border-color: transparent;
+    background-color: #4b011c;
+}
 .noren-top .dropdown-noren
 {
-    background-color: #c89cac;
+    background-color: #4b011c;
+}
+.noren-top .dropdown-noren > li > a
+{
+    color: #fff;
+}
+.noren-top .dropdown-noren > li > a:hover,
+.noren-top .dropdown-noren > li > a:focus
+{
+    text-decoration: none;
+
+    background-color: #a35b75;
+}
+.noren-top .dropdown-menu > .disabled > a,
+.noren-top .dropdown-menu > .disabled > a:hover,
+.noren-top .dropdown-menu > .disabled > a:focus
+{
+    color: #eee;
+    background-color: transparent;
 }
 .noren-bottom
 {
