@@ -1048,6 +1048,30 @@ footer .btn .badge
     color: #eee;
     background-color: #777;
 }
+footer .btn-footer-contact
+{
+    padding-left: 14px;
+
+    letter-spacing: 2px;
+}
+.jp footer .btn-footer-contact
+{
+    padding-left: 32px;
+
+    letter-spacing: 20px;
+}
+footer .btn-footer-mailmagazine
+{
+    padding-left: 14px;
+
+    letter-spacing: 2px;
+}
+.jp footer .btn-footer-mailmagazine
+{
+    padding-left: 22px;
+
+    letter-spacing: 10px;
+}
 @media (min-width: 768px)
 {
     .layout-home .same-as-youtube
