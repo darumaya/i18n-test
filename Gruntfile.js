@@ -238,5 +238,5 @@ module.exports = function (grunt) {
     grunt.registerTask('dist-images', 'responsive_images');
 
     // Default task.
-    grunt.registerTask('default', ['dist-css', 'dist-images']);
+    grunt.registerTask('default', ['dist-css'/*, 'dist-images'*/]);
 };
