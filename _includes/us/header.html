@@ -1,4 +1,3 @@
-{% capture country_path %}{{ page.country }}{% case page.country %}{% when 'us' %}/{% endcase %}{% endcapture %}
 <nav class="navbar navbar-static-top" role="navigation">
     <div class="noren-top">
         <div class="container">
@@ -25,7 +24,7 @@
             <div class="collapse navbar-collapse nav-noren-wrapper" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav nav-noren">
                     {% if page.category == 'About [TBD]' %}
-                    <li class="active"><a href="/{{ country_path }}information/">About [TBD]</a></li>
+                    <li class="active"><a href="/{{ country_path }}information/">About {{ page.country_path }} [TBD]</a></li>
                     {% else %}
                     <li><a href="/{{ country_path }}information/">About [TBD]</a></li>
                     {% endif %}
