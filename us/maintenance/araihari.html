@@ -54,7 +54,7 @@ related:
       description: ブログ、Facebookページにて洗い張りの仕事風景を更新しています。
       link: http://blog.darumaya-gofuku.jp/search/label/%E6%B4%97%E3%81%84%E5%BC%B5%E3%82%8A
       image: /images/a/araihari-relatedblog-DSC04909-{width}{pixel_ratio}.JPG
-country: jp
+country: us
 ---
 <section>
     <h2>洗い張りとは</h2>
@@ -95,7 +95,7 @@ country: jp
 
         <tbody>
 
-        {% for item in site.data.[page.country].price-lists.["洗い張り"] %}
+        {% for item in site.data[page.country].price-lists.["Araihari"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>
