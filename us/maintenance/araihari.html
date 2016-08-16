@@ -119,7 +119,7 @@ country: us
 
         <tbody>
 
-        {% for item in site.data.price-lists.["洗い張りから仕立て"] %}
+        {% for item in site.data[page.country].price-lists.["洗い張りから仕立て"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>
