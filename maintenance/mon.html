@@ -7,6 +7,7 @@ snipet_2nd: 入れます
 layout: category-article
 category: 'きもののお手入れ'
 order: 50
+country: jp
 ---
 <section>
     <h2>紋入れとは</h2>
@@ -87,7 +88,7 @@ order: 50
 
         <tbody>
 
-        {% for item in site.data.price-lists.["紋入れ"] %}
+        {% for item in site.data[page.country].price-lists.["紋入れ"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>

@@ -13,6 +13,7 @@ related:
       description: お手入れ料金が割引になるお客様感謝祭についてはこちら。
       link: /event/kanshasai.html
       image: /images/k/kanshasai-related-DSC05278-{width}{pixel_ratio}.JPG
+country: jp
 ---
 <section>
     <h2>料金について</h2>
@@ -41,7 +42,7 @@ related:
 
         <tbody>
 
-        {% for item in site.data.price-lists.["洗い張り"] %}
+        {% for item in site.data[page.country].price-lists.["洗い張り"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>
@@ -65,7 +66,7 @@ related:
 
         <tbody>
 
-        {% for item in site.data.price-lists.["洗い張りから仕立て"] %}
+        {% for item in site.data[page.country].price-lists.["洗い張りから仕立て"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>
@@ -89,7 +90,7 @@ related:
 
         <tbody>
 
-        {% for item in site.data.price-lists.["丸洗いとしみ抜き"] %}
+        {% for item in site.data[page.country].price-lists.["丸洗いとしみ抜き"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>
@@ -113,7 +114,7 @@ related:
 
         <tbody>
 
-        {% for item in site.data.price-lists.["染め"] %}
+        {% for item in site.data[page.country].price-lists.["染め"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>
@@ -135,7 +136,7 @@ related:
 
         <tbody>
 
-        {% for item in site.data.price-lists.["紋入れ"] %}
+        {% for item in site.data[page.country].price-lists.["紋入れ"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>
@@ -157,7 +158,7 @@ related:
 
         <tbody>
 
-        {% for item in site.data.price-lists.["湯のし"] %}
+        {% for item in site.data[page.country].price-lists.["湯のし"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>
@@ -179,7 +180,7 @@ related:
 
         <tbody>
 
-        {% for item in site.data.price-lists.["本湯通し"] %}
+        {% for item in site.data[page.country].price-lists.["本湯通し"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>

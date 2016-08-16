@@ -54,6 +54,7 @@ related:
       description: きものや羽織を帯に仕立て直す事例紹介です。
       link: /revival/toobi.html
       image: /images/t/toobi-related-P1080636-{width}{pixel_ratio}.JPG
+country: jp
 ---
 <section>
     <h2>仕立てとは</h2>
@@ -92,7 +93,7 @@ related:
 
         <tbody>
 
-        {% for item in site.data.price-lists.["洗い張りから仕立て"] %}
+        {% for item in site.data[page.country].price-lists.["洗い張りから仕立て"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>

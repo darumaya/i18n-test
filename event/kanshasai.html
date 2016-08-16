@@ -8,6 +8,7 @@ snipet_2nd: ご案内
 layout: category-article
 category: '催事のご案内'
 order: 10
+country: jp
 ---
 <section>
     <h2>お客様感謝祭とは</h2>
@@ -50,7 +51,7 @@ order: 10
 
             <tbody>
 
-            {% for item in site.data.price-lists.["洗い張り"] %}
+            {% for item in site.data[page.country].price-lists.["洗い張り"] %}
             <tr>
                 <td>{{ item.kimono }}</td>
                 <td>{{ item.regular_price }}</td>
@@ -74,7 +75,7 @@ order: 10
 
             <tbody>
 
-            {% for item in site.data.price-lists.["洗い張りから仕立て"] %}
+            {% for item in site.data[page.country].price-lists.["洗い張りから仕立て"] %}
             <tr>
                 <td>{{ item.kimono }}</td>
                 <td>{{ item.regular_price }}</td>
@@ -98,7 +99,7 @@ order: 10
 
             <tbody>
 
-            {% for item in site.data.price-lists.["丸洗いとしみ抜き"] %}
+            {% for item in site.data[page.country].price-lists.["丸洗いとしみ抜き"] %}
             <tr>
                 <td>{{ item.kimono }}</td>
                 <td>{{ item.regular_price }}</td>
@@ -122,7 +123,7 @@ order: 10
 
             <tbody>
 
-            {% for item in site.data.price-lists.["染め"] %}
+            {% for item in site.data[page.country].price-lists.["染め"] %}
             <tr>
                 <td>{{ item.kimono }}</td>
                 <td>{{ item.regular_price }}</td>
@@ -144,7 +145,7 @@ order: 10
 
             <tbody>
 
-            {% for item in site.data.price-lists.["紋入れ"] %}
+            {% for item in site.data[page.country].price-lists.["紋入れ"] %}
             <tr>
                 <td>{{ item.kimono }}</td>
                 <td>{{ item.regular_price }}</td>
@@ -166,7 +167,7 @@ order: 10
 
             <tbody>
 
-            {% for item in site.data.price-lists.["湯のし"] %}
+            {% for item in site.data[page.country].price-lists.["湯のし"] %}
             <tr>
                 <td>{{ item.kimono }}</td>
                 <td>{{ item.regular_price }}</td>
@@ -188,7 +189,7 @@ order: 10
 
             <tbody>
 
-            {% for item in site.data.price-lists.["本湯通し"] %}
+            {% for item in site.data[page.country].price-lists.["本湯通し"] %}
             <tr>
                 <td>{{ item.kimono }}</td>
                 <td>{{ item.regular_price }}</td>

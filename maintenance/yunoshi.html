@@ -27,6 +27,7 @@ carousel:
     - title: 仕上げ
       description: 仕上がった反物を板で巻いて平だたみにし、糸で綴じます。
       image: /images/y/yunoshi-shiage-DSC05020-{width}{pixel_ratio}.JPG
+country: jp
 ---
 <section>
     <h2>湯のしとは</h2>
@@ -65,7 +66,7 @@ carousel:
 
         <tbody>
 
-        {% for item in site.data.price-lists.["湯のし"] %}
+        {% for item in site.data[page.country].price-lists.["湯のし"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>
@@ -87,7 +88,7 @@ carousel:
 
         <tbody>
 
-        {% for item in site.data.price-lists.["本湯通し"] %}
+        {% for item in site.data[page.country].price-lists.["本湯通し"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>

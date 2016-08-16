@@ -57,6 +57,7 @@ related:
       description: きものを染め直してコートに仕立て直した事例紹介です。
       link: /revival/tocoat.html
       image: /images/t/tocoat-related-P1070151-{width}{pixel_ratio}.jpg
+country: jp
 ---
 <section>
     <h2>染めとは</h2>
@@ -95,7 +96,7 @@ related:
 
         <tbody>
 
-        {% for item in site.data.price-lists.["染め"] %}
+        {% for item in site.data[page.country].price-lists.["染め"] %}
         <tr>
             <td>{{ item.kimono }}</td>
             <td>{{ item.regular_price }}</td>
