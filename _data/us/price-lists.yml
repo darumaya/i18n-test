@@ -1,4 +1,4 @@
-"Toki":
+"解き":
   - kimono:         "Kimono(Awase), Nagajuban [TBD]"
     regular_price:  "&yen;1,500"
     sale_price:     "&yen;1,000"
@@ -9,7 +9,7 @@
     regular_price:  "&yen;6,000"
     sale_price:     "&yen;3,000"
 
-"Araihari":
+"洗い張り":
   - kimono:         "Komon [TBD]"
     regular_price:  "&yen;10,000"
     sale_price:     "&yen;5,000"
@@ -42,7 +42,7 @@
     sale_price:     "Additional &yen;2,000"
 
 
-"Araihari and Shitate":
+"洗い張りから仕立て":
   - kimono:         "Komon [TBD]"
     regular_price:  "&yen;29,000"
     sale_price:     "&yen;22,000"
@@ -74,7 +74,7 @@
     regular_price:  "Additional &yen;4,000"
     sale_price:     "Additional &yen;2,000"
 
-"Maruarai and Shiminuki":
+"丸洗いとしみ抜き":
   - kimono:         "Komon [TBD]"
     regular_price:  "&yen;9,000"
     sale_price:     "&yen;4,500"
@@ -97,7 +97,7 @@
     regular_price:  "&yen;7,000"
     sale_price:     "&yen;3,500"
 
-"Some":
+"染め":
   - kimono:         "縮緬系 [TBD]"
     regular_price:  "&yen;24,000"
     sale_price:     "&yen;12,000"
@@ -117,7 +117,7 @@
     regular_price:  "Additional &yen;12,000"
     sale_price:     "Additional &yen;6,000"
 
-"Mon-Ire":
+"紋入れ":
   - kimono:         "一つMon [TBD]"
     regular_price:  "&yen;14,000"
     sale_price:     "&yen;7,000"
@@ -131,7 +131,7 @@
     regular_price:  "Additional &yen;6,000"
     sale_price:     "Additional &yen;3,000"
 
-"Yunoshi":
+"湯のし":
   - kimono:         "Ittan-Mono [TBD]"
     regular_price:  "&yen;3,000"
     sale_price:     "&yen;1,500"
@@ -139,7 +139,7 @@
     regular_price:  "&yen;2,000"
     sale_price:     "&yen;1,000"
 
-"Hon-Yudoshi":
+"本湯通し":
   - kimono:         "Ittan-Mono [TBD]"
     regular_price:  "&yen;6,000"
     sale_price:     "&yen;3,000"
